@@ -19,7 +19,7 @@ export const useQualityStore = create(
     immer<QualityStore>((set) => ({
       quality: {
         automaticQuality: false,
-        lastChosenQuality: 854x480,
+        lastChosenQuality: null,
       },
       setLastChosenQuality(v) {
         set((s) => {
